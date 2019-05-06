@@ -1,6 +1,6 @@
 # Counter Element
 
-A custom element for the YOOtheme Pro Page Builder.
+A custom element for the YOOtheme Pro Page Builder to display a count up animation.
 
 Copyright (C) 2007-2019 YOOtheme GmbH yootheme.com, 2019 forrestkirby github.com/forrestkirby
 
