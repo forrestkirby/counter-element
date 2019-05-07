@@ -12,7 +12,10 @@
 		"text": "",
 		"number": 1000,
 		"unit": "",
-		"text_style": "",
+		"text_size": "",
+		"text_color": "",
+		"number_size": "",
+		"number_color": "",
 		"show_circle": true,
 		"percentage": 62,
 		"circle_color": "#1e87f0",
@@ -47,10 +50,10 @@
 			"description": "Text that will be displayed after the counter",
 			"type": "text"
 		},
-		"text_style":
+		"text_size":
 		{
-			"label": "Text style",
-			"description": "Text that will be displayed underneath the counter",
+			"label": "Text Size",
+			"description": "Select the text size",
 			"type": "select",
 			"default": "",
 			"options":
@@ -63,7 +66,65 @@
 				"Heading Large": "uk-heading-large",
 				"Heading X-Large": "uk-heading-xlarge",
 				"Heading 2X-Large": "uk-heading-2xlarge"
-			}
+			},
+			"enable": "text"
+		},
+		"text_color":
+		{
+			"label": "Text color",
+			"description": "Select the text color",
+			"type": "select",
+			"default": "",
+			"options":
+			{
+				"Default": "",
+				"Muted": "muted",
+				"Emphasis": "emphasis",
+				"Primary": "primary",
+				"Secondary": "secondary",
+				"Success": "success",
+				"Warning": "warning",
+				"Danger": "danger"
+			},
+			"enable": "text"
+		},
+		"number_size":
+		{
+			"label": "Number Size",
+			"description": "Select the number size",
+			"type": "select",
+			"default": "",
+			"options":
+			{
+				"Default": "",
+				"Text Small": "uk-text-small",
+				"Text Large": "uk-text-large",
+				"Heading Small": "uk-heading-small",
+				"Heading Medium": "uk-heading-medium",
+				"Heading Large": "uk-heading-large",
+				"Heading X-Large": "uk-heading-xlarge",
+				"Heading 2X-Large": "uk-heading-2xlarge"
+			},
+			"enable": "number"
+		},
+		"number_color":
+		{
+			"label": "Number color",
+			"description": "Select the number color",
+			"type": "select",
+			"default": "",
+			"options":
+			{
+				"Default": "",
+				"Muted": "muted",
+				"Emphasis": "emphasis",
+				"Primary": "primary",
+				"Secondary": "secondary",
+				"Success": "success",
+				"Warning": "warning",
+				"Danger": "danger"
+			},
+			"enable": "number"
 		},
 		"show_circle":
 		{
@@ -159,7 +220,10 @@
 			{
 				"title": "Settings",
 				"fields": [
-					"text_style",
+					"text_size",
+					"text_color",
+					"number_size",
+					"number_color",
 					"show_circle",
 					"percentage",
 					"circle_color",

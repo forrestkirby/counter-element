@@ -1,5 +1,6 @@
 var perimeter = null,
-	circle = null;
+	circle    = null,
+	numberEl  = null;
 
 var counters = document.querySelectorAll('.counter-container');
 
@@ -7,11 +8,17 @@ for (var i = 0; i < counters.length; i++) {
 
 	perimeter = 2 * Math.PI * counters[i].dataset.radius;
 	circle = counters[i].querySelector('.counter-value');
+	numberEl = counters[i].querySelector('.el-number');
 
-	circle.style.strokeDashoffset = perimeter * (1 - counters[i].dataset.percentage / 100);
-	circle.style.strokeDasharray = perimeter;
+	if (circle) {
+		circle.style.strokeDashoffset = perimeter * (1 - counters[i].dataset.percentage / 100);
+		circle.style.strokeDasharray = perimeter;
+	}
 
-	countUp(counters[i].querySelector('.el-number'), 0, counters[i].dataset.number, parseInt(counters[i].dataset.duration));
+	if (numberEl) {
+		console.log(numberEl);
+		countUp(numberEl, 0, counters[i].dataset.number, parseInt(counters[i].dataset.duration));
+	}
 
 };
 

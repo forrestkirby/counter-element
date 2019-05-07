@@ -11,7 +11,6 @@ $el = $this->el('div', [
 
 	'class' => [
 		'counter-container',
-		'uk-inline',
 	],
 
 	'data-number' => [
@@ -56,6 +55,36 @@ $svg = $this->el('svg', [
 
 ]);
 
+$textEl = $this->el('span', [
+
+	'class' => [
+		'el-text',
+		'{text_size}',
+		'uk-text-{text_color}',
+	],
+
+]);
+
+$numberEl = $this->el('span', [
+
+	'class' => [
+		'el-number',
+		'{number_size}',
+		'uk-text-{number_color}',
+	],
+
+]);
+
+$unitEl = $this->el('span', [
+
+	'class' => [
+		'el-unit',
+		'{number_size}',
+		'uk-text-{number_color}',
+	],
+
+]);
+
 ?>
 <?= $el($props, $attrs) ?>
 
@@ -77,22 +106,28 @@ $svg = $this->el('svg', [
 
 	<?php if($props['show_circle']) : ?>
 
-	<?= $svg($props) ?>
- 		<circle class="counter-meter" cx="<?= $cx ?>" cy="<?= $cy ?>" r="<?= $props['circle_radius'] ?>" stroke-width="<?= $props['circle_stroke_width'] ?>" fill="none" />
-		<circle class="counter-value" cx="<?= $cx ?>" cy="<?= $cy ?>" r="<?= $props['circle_radius'] ?>" stroke="<?= $props['circle_color'] ?>" stroke-width="<?= $props['circle_stroke_width'] ?>" fill="none" />
-	</svg>
+		<div class="uk-inline">
 
-	<div class="<?= $props['text_style'] ?> uk-position-center uk-overlay">
-		<span class="el-number"><?= $props['number'] ?></span><?= $props['unit'] ? '&nbsp;<span class="el-unit">' . $props['unit'] . '</span>' : '' ?>
-		<?= $props['unit'] ? '<br><span class="el-text">' . $props['text'] . '</span>' : '' ?>
-	</div>
+			<?= $svg($props) ?>
+				<circle class="counter-meter" cx="<?= $cx ?>" cy="<?= $cy ?>" r="<?= $props['circle_radius'] ?>" stroke-width="<?= $props['circle_stroke_width'] ?>" fill="none" />
+				<circle class="counter-value" cx="<?= $cx ?>" cy="<?= $cy ?>" r="<?= $props['circle_radius'] ?>" stroke="<?= $props['circle_color'] ?>" stroke-width="<?= $props['circle_stroke_width'] ?>" fill="none" />
+			</svg>
+
+			<div class="uk-position-center uk-overlay">
+				<?php if ($props['number']) : ?><?= $numberEl($props) ?><?= $props['number'] ?></span><?php endif ?>
+				<?php if ($props['unit']) : ?><?= $unitEl($props) ?><?= '&nbsp;' ?><?= $props['unit'] ?></span><?php endif ?>
+				<?php if ($props['text']) : ?><?= $textEl($props) ?><?= '<br>' ?><?= $props['text'] ?></span><?php endif ?>
+			</div>
+
+		</div>
 
 	<?php else : ?>
 
-	<div class="<?= $props['text_style'] ?>">
-		<span class="el-number"><?= $props['number'] ?></span>&nbsp;<span class="el-unit"><?= $props['unit'] ?></span>
-		<br><span class="el-text"><?= $props['text'] ?></span>
-	</div>
+		<div>
+			<?php if ($props['number']) : ?><?= $numberEl($props) ?><?= $props['number'] ?></span><?php endif ?>
+			<?php if ($props['unit']) : ?><?= $unitEl($props) ?><?= '&nbsp;' ?><?= $props['unit'] ?></span><?php endif ?>
+			<?php if ($props['text']) : ?><?= $textEl($props) ?><?= '<br>' ?><?= $props['text'] ?></span><?php endif ?>
+		</div>
 
 	<?php endif; ?>
 
