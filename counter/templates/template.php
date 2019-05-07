@@ -3,7 +3,7 @@
 $cx = $cy = $props['circle_radius'] * 1.1;
 $circleWidth = $circleHeight = $cx * 2;
 $viewBox = '0 0 ' . $circleWidth . ' ' . $circleWidth;
-$uniqid = uniqid('progress-');
+$uniqid = uniqid('counter-');
 $dashOffsetStart = 2 * M_PI * $props['circle_radius'];
 $dashOffsetEnd = 2 * M_PI * $props['circle_radius'] * (1 - $props['percentage'] / 100);
 
@@ -27,6 +27,10 @@ $el = $this->el('div', [
 
 	'data-duration' => [
 		'{duration}',
+	],
+
+	'data-uniqid' => [
+		$uniqid,
 	],
 
 ]);
