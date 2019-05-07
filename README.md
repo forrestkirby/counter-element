@@ -32,7 +32,7 @@ Please report issues using the [Github issue tool](../../issues).
 
 ## To-do
 
-- choose text style
+- digit grouping delimiter
 
 ## About
 
