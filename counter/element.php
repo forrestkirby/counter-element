@@ -6,7 +6,7 @@ return [
 
 	'transforms' => [
 
-		'render' => function ($node, array $params) use ($config) {
+		'render' => function ($node, array $params) use ($file) {
 
 			/**
 			 * @var $app
@@ -15,8 +15,8 @@ return [
 			 */
 			extract($params);
 
-			$app['styles']->add('builder-counter', $config->get('url:./css/counter.css'), [], ['defer' => true]);
-			$app['scripts']->add('builder-counter', $config->get('url:./js/counter.js'), [], ['defer' => true]);
+			$app['styles']->add('builder-counter', "{$file['dirname']}/css/counter.css", [], ['defer' => true]);
+			$app['scripts']->add('builder-counter', "{$file['dirname']}/js/counter.js", [], ['defer' => true]);
 
 		},
 
