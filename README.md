@@ -28,7 +28,7 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
 
 Please report issues using the [Github issue tool](../../issues).
 
-- tested with YOOtheme Pro 1.20 beta, might not work with earlier versions
+- doesn’t work with YOOtheme Pro 1.19.2 → use the [1.19.2 branch](https://github.com/forrestkirby/counter-element/tree/1.19.2) instead
 
 ## To-do
 
