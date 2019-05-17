@@ -1,5 +1,8 @@
 # Counter Element Changelog
 
+## 0.4
+- Changed file paths to reflect changes in [YOOtheme Pro 1.20](https://yootheme.com/blog/2019/05/17/yootheme-pro-1.20-released)
+
 ## 0.3
 - Added animation start when in viewport (scrollspy)
 
