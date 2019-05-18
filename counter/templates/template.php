@@ -63,7 +63,7 @@ $textEl = $this->el('span', [
 
 	'class' => [
 		'el-text',
-		'{text_size}',
+		'uk-{text_size}',
 		'uk-text-{text_color}',
 	],
 
@@ -73,7 +73,7 @@ $numberEl = $this->el('span', [
 
 	'class' => [
 		'el-number',
-		'{number_size}',
+		'uk-{number_size}',
 		'uk-text-{number_color}',
 	],
 
