@@ -59,13 +59,19 @@
 			"options":
 			{
 				"Default": "",
-				"Text Small": "uk-text-small",
-				"Text Large": "uk-text-large",
-				"Heading Small": "uk-heading-small",
-				"Heading Medium": "uk-heading-medium",
-				"Heading Large": "uk-heading-large",
-				"Heading X-Large": "uk-heading-xlarge",
-				"Heading 2X-Large": "uk-heading-2xlarge"
+				"Text Small": "text-small",
+				"Text Large": "text-large",
+				"H1": "h1",
+				"H2": "h2",
+				"H3": "h3",
+				"H4": "h4",
+				"H5": "h5",
+				"H6": "h6",
+				"Heading Small": "heading-small",
+				"Heading Medium": "heading-medium",
+				"Heading Large": "heading-large",
+				"Heading XLarge": "heading-xlarge",
+				"Heading 2XLarge": "heading-2xlarge"
 			},
 			"enable": "text"
 		},
@@ -97,13 +103,19 @@
 			"options":
 			{
 				"Default": "",
-				"Text Small": "uk-text-small",
-				"Text Large": "uk-text-large",
-				"Heading Small": "uk-heading-small",
-				"Heading Medium": "uk-heading-medium",
-				"Heading Large": "uk-heading-large",
-				"Heading X-Large": "uk-heading-xlarge",
-				"Heading 2X-Large": "uk-heading-2xlarge"
+				"Text Small": "text-small",
+				"Text Large": "text-large",
+				"H1": "h1",
+				"H2": "h2",
+				"H3": "h3",
+				"H4": "h4",
+				"H5": "h5",
+				"H6": "h6",
+				"Heading Small": "heading-small",
+				"Heading Medium": "heading-medium",
+				"Heading Large": "heading-large",
+				"Heading XLarge": "heading-xlarge",
+				"Heading 2XLarge": "heading-2xlarge"
 			},
 			"enable": "number"
 		},
