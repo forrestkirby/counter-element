@@ -83,7 +83,7 @@ $unitEl = $this->el('span', [
 
 	'class' => [
 		'el-unit',
-		'{number_size}',
+		'uk-{number_size}',
 		'uk-text-{number_color}',
 	],
 
