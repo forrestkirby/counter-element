@@ -1,62 +1,63 @@
-UIkit.util.ready(function() {
+function countUp(el, start, end, duration) {
 
-	var perimeter = null,
-		circle    = null,
-		numberEl  = null,
-		svg       = null;
+	var range = end - start;
+	var stepTime = Math.abs(Math.floor(duration / range));
 
-	var counters  = document.querySelectorAll('.counter-container');
+	var startTime = new Date().getTime();
+	var endTime = startTime + duration;
+	var timer;
+
+	function count() {
+		var now = new Date().getTime();
+		var remaining = Math.max((endTime - now) / duration, 0);
+		var value = Math.round(end - (remaining * range));
+		el.innerHTML = value;
+		if (value == end) {
+			clearInterval(timer);
+		}
+	}
+
+	timer = setInterval(count, stepTime);
+	count();
+}
+
+function startAnimation() {
+
+	var counters = document.querySelectorAll('.counter-container');
 
 	for (var i = 0; i < counters.length; i++) {
 
-		UIkit.scrollspy(counters[i], { hidden: false });
+		el = counters[i];
 
-		svg = counters[i].querySelector('.el-circle');
-		if (svg) { svgId = svg.id; }
-		if (svg) { svg.removeAttribute('id'); }
+		if (!el.getAttribute('data-animated') && UIkit.util.isInView(el)) {
 
-		UIkit.util.on(counters[i], 'inview', function() {
+			svg = el.querySelector('.el-circle');
 
-			perimeter = 2 * Math.PI * this.dataset.radius;
-			circle    = this.querySelector('.counter-value');
-			numberEl  = this.querySelector('.el-number');
-			svg       = this.querySelector('.el-circle');
-
-			if (svg) { svg.setAttribute('id', this.dataset.uniqid); }
+			var perimeter = 2 * Math.PI * el.dataset.radius,
+				circle = el.querySelector('.counter-value'),
+				numberEl = el.querySelector('.el-number'),
+				svg = el.querySelector('.el-circle');
 
 			if (circle) {
-				circle.style.strokeDashoffset = perimeter * (1 - this.dataset.percentage / 100);
+				circle.style.strokeDashoffset = perimeter * (1 - el.dataset.percentage / 100);
 				circle.style.strokeDasharray = perimeter;
 			}
 
 			if (numberEl) {
-				countUp(numberEl, 0, this.dataset.number, parseInt(this.dataset.duration));
+				countUp(numberEl, 0, el.dataset.number, parseInt(el.dataset.duration));
 			}
 
-		});
-	};
+			el.setAttribute('data-animated', true);
 
-	function countUp(el, start, end, duration) {
-
-		var range = end - start;
-		var stepTime = Math.abs(Math.floor(duration / range));
-
-		var startTime = new Date().getTime();
-		var endTime = startTime + duration;
-		var timer;
-
-		function count() {
-			var now = new Date().getTime();
-			var remaining = Math.max((endTime - now) / duration, 0);
-			var value = Math.round(end - (remaining * range));
-			el.innerHTML = value;
-			if (value == end) {
-				clearInterval(timer);
-			}
 		}
 
-		timer = setInterval(count, stepTime);
-		count();
-	}
+	};
 
+};
+
+UIkit.util.ready(function() {
+	startAnimation();
+	window.addEventListener('load', startAnimation, false);
+	window.addEventListener('scroll', startAnimation, false);
+	window.addEventListener('resize', startAnimation, false);
 });
