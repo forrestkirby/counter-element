@@ -1,5 +1,11 @@
 # Counter Element Changelog
 
+## 1.1
+
+### Fixed
+
+- compatibility with section animation
+
 ## 1.0
 
 ### Changed
