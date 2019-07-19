@@ -56,10 +56,6 @@ function startAnimation() {
 };
 
 UIkit.util.ready(function() {
-	UIkit.util.$$('.counter-container').forEach(function(el) {
-		var svg = el.querySelector('.el-circle');
-		if (svg) { svg.removeAttribute('id'); }
-	});
 	startAnimation();
 	window.addEventListener('scroll', startAnimation, false);
 	window.addEventListener('resize', startAnimation, false);
