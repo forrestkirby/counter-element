@@ -41,10 +41,6 @@ $svg = $this->el('svg', [
 		'el-circle',
 	],
 
-	'id' => [
-		$uniqid,
-	],
-
 	'width' => [
 		$circleWidth,
 	],
