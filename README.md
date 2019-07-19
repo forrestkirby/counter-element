@@ -29,7 +29,7 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
 Please report issues using the [Github issue tool](../../issues).
 
 - doesn’t work with YOOtheme Pro 1.19.2 → please use the [1.19.2 branch](https://github.com/forrestkirby/counter-element/tree/1.19.2) instead
-- count up animation doesn’t work when element or section animation is used → set *Animation* to `None` as a workaround
+- count up animation doesn’t work when element or section animation is used → [hotfix](https://github.com/forrestkirby/counter-element/pull/4)
 
 ## To-do
 
