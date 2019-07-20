@@ -57,6 +57,7 @@ function startAnimation() {
 
 UIkit.util.ready(function() {
 	startAnimation();
+	window.addEventListener('load', startAnimation, false);
 	window.addEventListener('scroll', startAnimation, false);
 	window.addEventListener('resize', startAnimation, false);
 });
