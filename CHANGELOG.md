@@ -1,5 +1,11 @@
 # Counter Element Changelog
 
+## 1.1.1
+
+### Changed
+
+- avoid block by EasyPrivacy list
+
 ## 1.1
 
 ### Fixed
