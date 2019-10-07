@@ -1,5 +1,11 @@
 # Counter Element Changelog
 
+## 1.1.2
+
+### Fixed
+
+- paths to CSS and JS resources in `element.php`
+
 ## 1.1.1
 
 ### Changed
