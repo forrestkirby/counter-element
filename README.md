@@ -20,6 +20,7 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
 ## Installation
 
 - download and unzip the element package
+- rename `counter-element-master` to `hd-counter`
 - create a [Child Theme](https://yootheme.com/support/yootheme-pro/joomla/child-themes) in your YOOtheme Pro installation and activate the child theme
 - copy all files into the directory `/templates/yootheme_child/builder/` (Joomla!) or `/wp-content/themes/yootheme-child/builder/` (WordPress) of your installation while *child* must be the name of your child theme
 - access the YOOtheme Pro Page Builder, the custom elements should now be available
@@ -47,6 +48,7 @@ Counter Element is a custom element for YOOtheme Pro developed by [YOOtheme](htt
 - [Toggle Element](https://github.com/forrestkirby/toggle-element)
 - [Progress Element](https://github.com/forrestkirby/progress-element)
 - [Timeline Element](https://github.com/forrestkirby/timeline-element)
+- [Flipcard Element](https://github.com/forrestkirby/flipcard-element)
 
 ## Screenshots
 
