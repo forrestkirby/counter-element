@@ -15,8 +15,8 @@ return [
 			 */
 			extract($params);
 
-			$app['styles']->add('builder-hd-counter', "{$file['dirname']}/css/counter.css", [], ['defer' => true]);
-			$app['scripts']->add('builder-hd-counter', "{$file['dirname']}/js/counter.js", [], ['defer' => true]);
+			$app['styles']->add('builder-hd-counter', "{$file['dirname']}/css/hd-counter.css", [], ['defer' => true]);
+			$app['scripts']->add('builder-hd-counter', "{$file['dirname']}/js/hd-counter.js", [], ['defer' => true]);
 
 		},
 
