@@ -1,22 +1,20 @@
 <?php
 
-use YOOtheme\Util\Arr;
+namespace YOOtheme;
 
 return [
 
 	'transforms' => [
 
-		'render' => function ($node, array $params) use ($file) {
+		'render' => function ($node) {
 
 			/**
-			 * @var $app
-			 * @var $theme
-			 * @var $builder
+			 * @var Metadata $metadata
 			 */
-			extract($params);
+			$metadata = app(Metadata::class);
 
-			$app['styles']->add('builder-hd-counter', "{$file['dirname']}/css/hd-counter.css", [], ['defer' => true]);
-			$app['scripts']->add('builder-hd-counter', "{$file['dirname']}/js/hd-counter.js", [], ['defer' => true]);
+			$metadata->set('style:builder-hd-counter', ['href' => Path::get('./css/hd-counter.css'), 'defer' => true]);
+			$metadata->set('script:builder-hd-counter', ['src' => Path::get('./js/hd-counter.js'), 'defer' => true]);
 
 		},
 
