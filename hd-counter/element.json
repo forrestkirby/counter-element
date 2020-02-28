@@ -37,19 +37,22 @@
 		{
 			"label": "Text",
 			"description": "Text that will be displayed underneath the counter",
-			"type": "text"
+			"type": "text",
+			"source": "true"
 		},
 		"number":
 		{
 			"label": "Number",
 			"description": "Set the number to which the counter should count up",
-			"type": "number"
+			"type": "number",
+			"source": "true"
 		},
 		"unit":
 		{
 			"label": "Unit",
 			"description": "Text that will be displayed after the counter",
-			"type": "text"
+			"type": "text",
+			"source": "true"
 		},
 		"text_size":
 		{
@@ -150,7 +153,8 @@
 			"label": "Percentage",
 			"description": "Set the percentage of the circle that should be filled when the animation is complete",
 			"type": "number",
-			"enable": "show_circle"
+			"enable": "show_circle",
+			"source": "true"
 		},
 		"circle_color":
 		{
@@ -201,6 +205,7 @@
 		"visibility": "${builder.visibility}",
 		"name": "${builder.name}",
 		"status": "${builder.status}",
+		"source": "${builder.source}",
 		"id": "${builder.id}",
 		"class": "${builder.cls}",
 		"css":
