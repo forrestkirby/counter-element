@@ -38,21 +38,21 @@
 			"label": "Text",
 			"description": "Text that will be displayed underneath the counter",
 			"type": "text",
-			"source": "true"
+			"source": true
 		},
 		"number":
 		{
 			"label": "Number",
 			"description": "Set the number to which the counter should count up",
 			"type": "number",
-			"source": "true"
+			"source": true
 		},
 		"unit":
 		{
 			"label": "Unit",
 			"description": "Text that will be displayed after the counter",
 			"type": "text",
-			"source": "true"
+			"source": true
 		},
 		"text_size":
 		{
@@ -154,7 +154,7 @@
 			"description": "Set the percentage of the circle that should be filled when the animation is complete",
 			"type": "number",
 			"enable": "show_circle",
-			"source": "true"
+			"source": true
 		},
 		"circle_color":
 		{
@@ -181,7 +181,8 @@
 		{
 			"label": "Duration",
 			"description": "Set the animation duration in ms.",
-			"type": "number"
+			"type": "number",
+			"source": true
 		},
 		"position": "${builder.position}",
 		"position_left": "${builder.position_left}",
