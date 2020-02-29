@@ -1,5 +1,15 @@
 # Counter Element Changelog
 
+## 2.0.0-beta.9
+
+### Added
+
+- dynamic content
+
+### Changed
+
+- theme functions to load CSS/JS
+
 ## 1.1.2
 
 ### Fixed
