@@ -13,7 +13,7 @@ return [
 			 */
 			$metadata = app(Metadata::class);
 
-			$metadata->set('style:builder-hd-counter', ['href' => Path::get('./css/hd-counter.css'), 'defer' => true]);
+			$metadata->set('style:builder-hd-counter', ['href' => Path::get('./css/hd-counter.css')]);
 			$metadata->set('script:builder-hd-counter', ['src' => Path::get('./js/hd-counter.js'), 'defer' => true]);
 
 		},
