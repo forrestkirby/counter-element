@@ -1,5 +1,11 @@
 # Counter Element Changelog
 
+## 2.0.9
+
+### Added
+
+- separator for thousands
+
 ## 2.0.4
 
 ### Removed

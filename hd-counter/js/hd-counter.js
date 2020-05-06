@@ -1,17 +1,17 @@
-function countUp(el, start, end, duration) {
+function countUp(el, start, end, duration, separatorLocale) {
 
-	var range = end - start;
-	var stepTime = Math.abs(Math.floor(duration / range));
+	let range = end - start;
+	let stepTime = Math.abs(Math.floor(duration / range));
 
-	var startTime = new Date().getTime();
-	var endTime = startTime + duration;
-	var timer;
+	let startTime = new Date().getTime();
+	let endTime = startTime + duration;
+	let timer;
 
 	function count() {
-		var now = new Date().getTime();
-		var remaining = Math.max((endTime - now) / duration, 0);
-		var value = Math.round(end - (remaining * range));
-		el.innerHTML = value;
+		let now = new Date().getTime();
+		let remaining = Math.max((endTime - now) / duration, 0);
+		let value = Math.round(end - (remaining * range));
+		el.innerHTML = (separatorLocale === undefined) ? value : value.toLocaleString(separatorLocale, {useGrouping: true });
 		if (value == end) {
 			clearInterval(timer);
 		}
@@ -23,18 +23,18 @@ function countUp(el, start, end, duration) {
 
 function startAnimation() {
 
-	var counters = document.querySelectorAll('.counter-container');
+	let counters = document.querySelectorAll('.counter-container');
 
-	for (var i = 0; i < counters.length; i++) {
+	for (let i = 0; i < counters.length; i++) {
 
-		var el = counters[i];
+		let el = counters[i];
 
 		if (!el.getAttribute('data-animated') && UIkit.util.isInView(el)) {
 
-			var perimeter = 2 * Math.PI * el.dataset.radius,
+			let perimeter = 2 * Math.PI * el.dataset.radius,
 			    circle    = el.querySelector('.counter-value'),
 			    numberEl  = el.querySelector('.el-number'),
-			    svg  = el.querySelector('.el-circle');
+			    svg       = el.querySelector('.el-circle');
 
 			if (svg) { svg.setAttribute('id', el.dataset.uniqid); }
 
@@ -44,7 +44,7 @@ function startAnimation() {
 			}
 
 			if (numberEl) {
-				countUp(numberEl, 0, el.dataset.number, parseInt(el.dataset.duration));
+				countUp(numberEl, 0, el.dataset.number, parseInt(el.dataset.duration), el.dataset.separatorLocale);
 			}
 
 			el.setAttribute('data-animated', true);

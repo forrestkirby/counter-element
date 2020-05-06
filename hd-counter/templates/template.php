@@ -17,6 +17,10 @@ $el = $this->el('div', [
 		'{number}',
 	],
 
+	'data-separator-locale' => [
+		'{separator_locale}',
+	],
+
 	'data-percentage' => [
 		'{percentage}',
 	],

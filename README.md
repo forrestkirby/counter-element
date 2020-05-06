@@ -28,10 +28,6 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
 
 Please report issues using the [Github issue tool](../../issues).
 
-## To-do
-
-- digit grouping delimiter
-
 ## About
 
 Counter Element is a custom element for YOOtheme Pro developed by [YOOtheme](https://yootheme.com).

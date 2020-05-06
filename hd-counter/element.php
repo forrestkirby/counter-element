@@ -22,7 +22,13 @@ return [
 
 	'updates' => [
 
-		//
+        '2.0.9' => function ($node) {
+
+            if (!isset($node->props['separator_locale'])) {
+                $node->props['separator_locale'] = "";
+            }
+
+        }
 
 	],
 

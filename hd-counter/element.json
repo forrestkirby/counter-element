@@ -17,6 +17,7 @@
 		"text_color": "",
 		"number_size": "",
 		"number_color": "",
+		"separator_locale": "",
 		"show_circle": true,
 		"percentage": 62,
 		"circle_color": "#1e87f0",
@@ -142,6 +143,20 @@
 			},
 			"enable": "number"
 		},
+		"separator_locale":
+		{
+			"label": "Separator locale",
+			"description": "Choose a locale if you want the number to show a separator for thousands",
+			"type": "select",
+			"default": "",
+			"options":
+			{
+				"None": "",
+				"English (U.S.) – comma": "en-US",
+				"German (Germany) – full stop": "de-DE"
+			},
+			"enable": "number"
+		},
 		"show_circle":
 		{
 			"label": "Show circle",
@@ -243,6 +258,7 @@
 						"text_color",
 						"number_size",
 						"number_color",
+						"separator_locale",
 						"show_circle",
 						"percentage",
 						"circle_color",
