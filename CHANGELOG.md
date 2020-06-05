@@ -1,5 +1,12 @@
 # Counter Element Changelog
 
+## 2.1.0-beta.1
+
+### Added
+
+- dynamic conditions to display element depending on a content field
+- custom attributes option
+
 ## 2.0.9
 
 ### Added
