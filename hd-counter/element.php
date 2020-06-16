@@ -16,6 +16,9 @@ return [
 			$metadata->set('style:builder-hd-counter', ['href' => Path::get('./css/hd-counter.css')]);
 			$metadata->set('script:builder-hd-counter', ['src' => Path::get('./js/hd-counter.js'), 'defer' => true]);
 
+            // Don't render element if content fields are empty
+            return $node->props['text'] || $node->props['number'] || ($node->props['percentage'] && $node->props['duration']);
+
 		},
 
 	],

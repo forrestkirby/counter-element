@@ -60,18 +60,17 @@
 			"label": "Text Size",
 			"description": "Select the text size",
 			"type": "select",
-			"default": "",
 			"options":
 			{
 				"Default": "",
 				"Text Small": "text-small",
 				"Text Large": "text-large",
-				"H1": "h1",
-				"H2": "h2",
-				"H3": "h3",
-				"H4": "h4",
-				"H5": "h5",
-				"H6": "h6",
+				"h1": "h1",
+				"h2": "h2",
+				"h3": "h3",
+				"h4": "h4",
+				"h5": "h5",
+				"h6": "h6",
 				"Heading Small": "heading-small",
 				"Heading Medium": "heading-medium",
 				"Heading Large": "heading-large",
@@ -85,7 +84,6 @@
 			"label": "Text color",
 			"description": "Select the text color",
 			"type": "select",
-			"default": "",
 			"options":
 			{
 				"Default": "",
@@ -104,18 +102,17 @@
 			"label": "Number Size",
 			"description": "Select the number size",
 			"type": "select",
-			"default": "",
 			"options":
 			{
 				"Default": "",
 				"Text Small": "text-small",
 				"Text Large": "text-large",
-				"H1": "h1",
-				"H2": "h2",
-				"H3": "h3",
-				"H4": "h4",
-				"H5": "h5",
-				"H6": "h6",
+				"h1": "h1",
+				"h2": "h2",
+				"h3": "h3",
+				"h4": "h4",
+				"h5": "h5",
+				"h6": "h6",
 				"Heading Small": "heading-small",
 				"Heading Medium": "heading-medium",
 				"Heading Large": "heading-large",
@@ -129,7 +126,6 @@
 			"label": "Number color",
 			"description": "Select the number color",
 			"type": "select",
-			"default": "",
 			"options":
 			{
 				"Default": "",
@@ -148,7 +144,6 @@
 			"label": "Separator locale",
 			"description": "Choose a locale if you want the number to show a separator for thousands",
 			"type": "select",
-			"default": "",
 			"options":
 			{
 				"None": "",
@@ -224,6 +219,7 @@
 		"source": "${builder.source}",
 		"id": "${builder.id}",
 		"class": "${builder.cls}",
+		"attributes": "${builder.attrs}",
 		"css":
 		{
 			"label": "CSS",
