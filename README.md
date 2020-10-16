@@ -42,9 +42,10 @@ Counter Element is a custom element for YOOtheme Pro developed by [YOOtheme](htt
 - [Progress Element](https://github.com/forrestkirby/progress-element)
 - [Timeline Element](https://github.com/forrestkirby/timeline-element)
 - [Flipcard Element](https://github.com/forrestkirby/flipcard-element)
+- [Image Comparison Element](https://github.com/forrestkirby/image-comparison-element)
 
 ## Screenshots
 
-![Image](https://pionte.ch/yootheme/max/images/tutorial-counter-2.jpg)
+![Image](https://herzog-dupont.de/images/tutorials/tutorial-counter-2.jpg)
 
-![Image](https://pionte.ch/yootheme/max/images/tutorial-counter-3.jpg)
+![Image](https://herzog-dupont.de/images/tutorials/tutorial-counter-3.jpg)
