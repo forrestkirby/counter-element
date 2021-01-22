@@ -83,7 +83,8 @@ $unitEl = $this->el('span', [
 
 	'class' => [
 		'el-unit',
-		'uk-{number_size}',
+		'uk-{number_size} {@unit_size: number-size}',
+		'uk-{unit_size} {@!unit_size: number-size}',
 		'uk-text-{number_color}',
 	],
 
@@ -119,7 +120,7 @@ $unitEl = $this->el('span', [
 
 			<div class="uk-position-center uk-overlay">
 				<?php if ($props['number']) : ?><?= $numberEl($props) ?><?= $props['number'] ?></span><?php endif ?>
-				<?php if ($props['unit']) : ?><?= $unitEl($props) ?><?= '&nbsp;' ?><?= $props['unit'] ?></span><?php endif ?>
+				<?php if ($props['unit']) : ?><?= $unitEl($props) ?><?= ' ' ?><?= $props['unit'] ?></span><?php endif ?>
 				<?php if ($props['text']) : ?><?= $textEl($props) ?><?= '<br>' ?><?= $props['text'] ?></span><?php endif ?>
 			</div>
 
@@ -129,7 +130,7 @@ $unitEl = $this->el('span', [
 
 		<div>
 			<?php if ($props['number']) : ?><?= $numberEl($props) ?><?= $props['number'] ?></span><?php endif ?>
-			<?php if ($props['unit']) : ?><?= $unitEl($props) ?><?= '&nbsp;' ?><?= $props['unit'] ?></span><?php endif ?>
+			<?php if ($props['unit']) : ?><?= $unitEl($props) ?><?= ' ' ?><?= $props['unit'] ?></span><?php endif ?>
 			<?php if ($props['text']) : ?><?= $textEl($props) ?><?= '<br>' ?><?= $props['text'] ?></span><?php endif ?>
 		</div>
 

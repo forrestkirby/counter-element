@@ -17,6 +17,7 @@
 		"text_color": "",
 		"number_size": "",
 		"number_color": "",
+		"unit_size": "number-size",
 		"separator_locale": "",
 		"show_circle": true,
 		"percentage": 62,
@@ -139,6 +140,31 @@
 			},
 			"enable": "number"
 		},
+		"unit_size":
+		{
+			"label": "Unit Size",
+			"description": "Select the unit size",
+			"type": "select",
+			"options":
+			{
+				"Same as number size": "number-size",
+				"Default": "",
+				"Text Small": "text-small",
+				"Text Large": "text-large",
+				"h1": "h1",
+				"h2": "h2",
+				"h3": "h3",
+				"h4": "h4",
+				"h5": "h5",
+				"h6": "h6",
+				"Heading Small": "heading-small",
+				"Heading Medium": "heading-medium",
+				"Heading Large": "heading-large",
+				"Heading XLarge": "heading-xlarge",
+				"Heading 2XLarge": "heading-2xlarge"
+			},
+			"enable": "unit"
+		},
 		"separator_locale":
 		{
 			"label": "Separator locale",
@@ -254,6 +280,7 @@
 						"text_color",
 						"number_size",
 						"number_color",
+						"unit_size",
 						"separator_locale",
 						"show_circle",
 						"percentage",

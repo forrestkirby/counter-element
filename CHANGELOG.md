@@ -1,5 +1,11 @@
 # Counter Element Changelog
 
+## 2.3.29
+
+### Added
+
+- unit size option
+
 ## 2.1.0-beta.1
 
 ### Added
@@ -85,4 +91,4 @@
 
 ### Added
 
-- Initial release
+- initial release
