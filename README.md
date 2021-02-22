@@ -47,7 +47,7 @@ Counter Element is a custom element for YOOtheme Pro developed by [YOOtheme](htt
 - [Timeline Element](https://github.com/forrestkirby/timeline-element)
 - [Flipcard Element](https://github.com/forrestkirby/flipcard-element)
 - [Image Comparison Element](https://github.com/forrestkirby/image-comparison-element)
-- [Herzog Dupont for YOOtheme Pro (Joomla!)](https://github.com/forrestkirby/herzogdupont-joomla)
+- [Herzog Dupont Joomla! Plugin](https://github.com/forrestkirby/herzogdupont-joomla)
 
 ## Screenshots
 
