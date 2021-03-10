@@ -1,5 +1,11 @@
 # Counter Element Changelog
 
+## 2.4.1
+
+### Fixed
+
+- centered alignment in Safari
+
 ## 2.3.29
 
 ### Added
