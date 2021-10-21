@@ -1,6 +1,6 @@
 <?php
 
-/* Counter Element Copyright (C) 2019–2021 Thomas Weidlich GNU GPL v3 */
+/* Herzog Dupont Copyright (C) 2019–2021 Thomas Weidlich GNU GPL v3 */
 
 $cx = $cy = $props['circle_radius'] * 1.1;
 $circleWidth = $circleHeight = $cx * 2;
