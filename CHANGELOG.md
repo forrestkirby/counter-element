@@ -1,5 +1,11 @@
 # Counter Element Changelog
 
+## 2.7.9
+
+### Added
+
+- option to disable pointer events for absolute positioned builder elements
+
 ## 2.4.1
 
 ### Fixed
