@@ -1,5 +1,11 @@
 # Counter Element Changelog
 
+## 2.7.22
+
+### Changed
+
+- revert fix centered alignment in Safari
+
 ## 2.7.17
 
 ### Removed
